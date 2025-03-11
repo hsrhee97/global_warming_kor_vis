@@ -36,6 +36,57 @@
 
 - **열스트레스 지수 변화 (1974 - 2050 예측 포함)**
   - WBGT (습구흑구온도) 지수를 활용하여 열스트레스 수준을 분석하고 미래 예측 데이터 포함
+# WBGT (Wet Bulb Globe Temperature) 계산식
+
+WBGT(Wet Bulb Globe Temperature)는 열스트레스 지수를 측정하는 데 사용되는 지표로, 건구온도(Ta), 습구온도(Tw), 흑구온도(Tg)를 기반으로 계산됩니다.
+
+## 📌 WBGT 공식
+
+\[
+WBGT = 0.7 \times Tw + 0.2 \times Tg + 0.1 \times Ta
+\]
+
+- \( Tw \) : 습구온도 (Wet Bulb Temperature)  
+- \( Tg \) : 흑구온도 (Globe Temperature)  
+- \( Ta \) : 건구온도 (Air Temperature)  
+
+---
+
+## 📌 세부 계산식
+
+### 1️⃣ 건구온도 (\(Ta\))
+\[
+Ta = TA
+\]
+
+### 2️⃣ 습구온도 (\(Tw\))
+\[
+Tw = Ta \times \arctan(0.151977 \times (HM + 8.313659)^{0.5})
+\]
+\[
++ \arctan(Ta + HM) - \arctan(HM - 1.676331)
+\]
+\[
++ 0.00391838 \times (HM)^{1.5} \times \arctan(0.023101 \times HM) - 4.686035
+\]
+
+### 3️⃣ 흑구온도 (\(Tg\))
+\[
+Tg = Ta + \left(\frac{\sqrt{WS} \times 10}{2.3} \right)
+\]
+
+---
+
+## 📌 변수 설명
+| 변수 | 설명 |
+|------|------|
+| **Ta** | 건구온도 (Air Temperature) |
+| **Tw** | 습구온도 (Wet Bulb Temperature) |
+| **Tg** | 흑구온도 (Globe Temperature) |
+| **HM** | 상대습도 (Humidity) |
+| **WS** | 풍속 (Wind Speed) |
+
+### 💡 WBGT는 환경적 요인(온도, 습도, 바람)에 따라 달라지며, 열사병 예방 및 스포츠, 노동 환경에서 중요한 지표로 사용됩니다.
 
 ### 🦋 생태계 변화 분석
 - **기온 상승에 따른 곤충 개체 수 변화**
