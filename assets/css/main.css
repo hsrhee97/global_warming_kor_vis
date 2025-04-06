@@ -621,7 +621,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #FFFFF0;
+		background: #ffffff;
 		color: #39454b;
 		padding: 2em;
 	}
@@ -2059,7 +2059,7 @@ input, select, textarea {
 			}
 			/* 백그라운드 색상 */
 			.main.style3.primary {
-				background: #FFFFF0;
+				background: #ffffff;
 			}
 
 			.main.style3.secondary {
